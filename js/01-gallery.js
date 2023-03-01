@@ -40,12 +40,13 @@ function onGalleryClick(e) {
       onClose: () => { window.removeEventListener("keydown", onEscPress) }
     }
   );
+  function onEscPress(e) {
+    if (e.code === "Escape") {
+      instance.close();
+    }
 
-  instance.show();
-}
-
-function onEscPress(e) {
-  if (e.code === "Escape") {
-    instance.close();
+    instance.show();
   }
+
+
 }
