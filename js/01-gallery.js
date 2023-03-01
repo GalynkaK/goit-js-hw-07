@@ -44,9 +44,7 @@ function onGalleryClick(e) {
     if (e.code === "Escape") {
       instance.close();
     }
-
-    instance.show();
   }
-
-
+  instance.show();
 }
+
